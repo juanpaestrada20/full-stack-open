@@ -28,14 +28,14 @@ sequenceDiagram
     Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
     deactivate Browser
     activate Server
-    Server-->>Browser: CSS file
+    Server-->>Browser: CSS file (main.css)
     activate Server
 
     activate Browser
     Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
     deactivate Browser
     activate Server
-    Server-->>Browser: JavaScript file
+    Server-->>Browser: JavaScript file (main.js)
     deactivate Server
     Note right of Browser: The Browser starts executing the JavaScript code that fetches the JSON from the Server
 
